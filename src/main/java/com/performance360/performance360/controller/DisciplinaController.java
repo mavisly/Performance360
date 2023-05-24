@@ -3,6 +3,8 @@ package com.performance360.performance360.controller;
 import java.util.List;
 import java.util.Optional;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +23,6 @@ import org.springframework.web.server.ResponseStatusException;
 import com.performance360.performance360.model.Disciplina;
 import com.performance360.performance360.repository.DisciplinaRepository;
 
-import jakarta.validation.Valid;
 
 @RestController //informa que a classe recebera requisições compostas por url, verbo e request body
 @RequestMapping("/disciplinas") //define a url
